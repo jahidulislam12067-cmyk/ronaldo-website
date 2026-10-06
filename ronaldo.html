@@ -1,0 +1,4264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070707">
+<meta name="description" content="CR7 LEGACY — a premium Cristiano Ronaldo fan experience celebrating his career, records, trophies and legacy.">
+<meta name="keywords" content="Cristiano Ronaldo, CR7, Ronaldo, football, Portugal, Manchester United, Real Madrid, Juventus, Al Nassr, CR7 Legacy">
+<meta name="author" content="Md. Jahidul Islam">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="CR7 LEGACY — The Legacy of Cristiano Ronaldo">
+<meta property="og:description" content="A premium fan-made tribute to Cristiano Ronaldo.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="ronaldo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CR7 LEGACY">
+<meta name="twitter:description" content="The legacy, records and story of Cristiano Ronaldo.">
+<title>CR7 LEGACY — The Cristiano Ronaldo Digital Museum</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --gold:#FFD700;--gold2:#FFB300;--champ:#F6E7B0;--amber:#FF9800;
+  --black:#030303;--obsidian:#070707;--ink:#0C0C0F;--charcoal:#111318;--graphite:#181B20;
+  --white:#FFFFFF;--snow:#F7F7F5;--silver:#D7D9DE;--steel:#9AA0AA;
+  --royal:#4169E1;--blue:#1E88FF;--cyan:#00D9FF;--ice:#BDEBFF;
+  --violet:#7C3AED;--purple:#A855F7;--lavender:#D8B4FE;
+  --emerald:#00C896;--mint:#65FFD6;--green:#22C55E;--neon:#B6FF00;
+  --crimson:#DC143C;--ruby:#FF1744;--coral:#FF6B6B;--orange:#FF6D00;--sunset:#FF8A65;
+  --glass:rgba(255,255,255,.055);--line:rgba(255,255,255,.10);
+  --shadow:0 24px 70px rgba(0,0,0,.45);
+  --radius:24px;--max:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{
+  font-family:Inter,system-ui,sans-serif;background:
+  radial-gradient(circle at 12% 12%,rgba(124,58,237,.10),transparent 25%),
+  radial-gradient(circle at 90% 18%,rgba(0,217,255,.08),transparent 25%),
+  radial-gradient(circle at 50% 80%,rgba(255,215,0,.06),transparent 30%),
+  var(--black);color:var(--snow);line-height:1.65;overflow-x:hidden
+}
+body.light{--black:#f4f5f7;--obsidian:#fff;--ink:#f8f8f8;--charcoal:#fff;--graphite:#eef0f3;--white:#090909;--snow:#101114;--silver:#454951;--steel:#666b75;--line:rgba(0,0,0,.10);--glass:rgba(0,0,0,.035);background:#f4f5f7}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button,input{font:inherit}
+button{cursor:pointer}
+.container{width:min(var(--max),92%);margin:auto}
+.section{padding:105px 0;position:relative}
+.section-kicker{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:.78rem;font-weight:900;letter-spacing:.2em;text-transform:uppercase;margin-bottom:13px}
+.section-title{font-family:Montserrat,sans-serif;font-size:clamp(2rem,5vw,4rem);line-height:1.02;font-weight:900;letter-spacing:-.045em}
+.section-title span{background:linear-gradient(90deg,var(--gold),var(--champ),var(--amber),var(--white));-webkit-background-clip:text;color:transparent}
+.section-sub{color:var(--silver);max-width:720px;margin-top:18px}
+.grid{display:grid;gap:24px}
+.glass{background:linear-gradient(145deg,rgba(255,255,255,.085),rgba(255,255,255,.025));border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(18px)}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s ease}
+.reveal.show{opacity:1;transform:none}
+.noise{position:fixed;inset:0;pointer-events:none;opacity:.035;z-index:1000;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E")}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--violet),var(--cyan),var(--gold),var(--ruby));z-index:2000}
+
+header{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(3,3,3,.58);border-bottom:1px solid transparent;backdrop-filter:blur(20px);transition:.3s}
+body.light header{background:rgba(255,255,255,.75)}
+header.scrolled{border-color:var(--line);box-shadow:0 10px 40px rgba(0,0,0,.22)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Montserrat;font-weight:900;letter-spacing:-.05em;font-size:1.25rem}
+.logo-mark{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;color:#111;background:linear-gradient(135deg,var(--gold),var(--champ),var(--orange));box-shadow:0 0 28px rgba(255,215,0,.22)}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{padding:10px 12px;color:var(--silver);font-size:.86rem;font-weight:700;border-radius:12px;transition:.25s}
+.nav-links a:hover,.nav-links a.active{color:var(--white);background:var(--glass)}
+.nav-actions{display:flex;align-items:center;gap:8px}
+.icon-btn,.menu-btn{width:42px;height:42px;border:1px solid var(--line);background:var(--glass);color:var(--white);border-radius:12px;display:grid;place-items:center}
+.menu-btn{display:none}
+.hero{min-height:100vh;padding-top:120px;display:grid;align-items:center;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:700px;height:700px;right:-280px;top:60px;background:radial-gradient(circle,rgba(255,215,0,.17),transparent 68%);filter:blur(8px)}
+.hero:after{content:"CR7";position:absolute;right:-50px;bottom:-100px;font:900 32vw/1 Montserrat;color:rgba(255,255,255,.018);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid rgba(255,215,0,.24);border-radius:999px;background:rgba(255,215,0,.055);color:var(--champ);font-weight:800;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 6px rgba(34,197,94,.10),0 0 20px var(--green)}
+.hero h1{font-family:Montserrat;font-size:clamp(3.5rem,8vw,7.8rem);line-height:.86;letter-spacing:-.075em;margin:25px 0 24px;font-weight:900}
+.hero h1 .gold{background:linear-gradient(100deg,var(--gold),var(--champ),var(--amber),var(--gold));background-size:220% auto;-webkit-background-clip:text;color:transparent;animation:shine 5s linear infinite}
+@keyframes shine{to{background-position:220% center}}
+.hero-copy{font-size:1.08rem;color:var(--silver);max-width:650px}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border-radius:14px;border:1px solid var(--line);font-weight:900;transition:.25s}
+.btn-primary{color:#111;background:linear-gradient(135deg,var(--gold),var(--champ),var(--amber));box-shadow:0 12px 35px rgba(255,193,7,.20)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 17px 45px rgba(255,193,7,.30)}
+.btn-ghost{background:var(--glass);color:var(--white)}
+.btn-ghost:hover{border-color:rgba(255,215,0,.45);transform:translateY(-3px)}
+.hero-photo{position:relative;min-height:610px;display:grid;place-items:center}
+.hero-photo:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:conic-gradient(from 0deg,var(--gold),var(--violet),var(--cyan),var(--gold));filter:blur(25px);opacity:.27;animation:spin 12s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-photo img{position:relative;width:min(100%,520px);height:610px;object-fit:cover;object-position:center top;border-radius:34px;mask-image:linear-gradient(to bottom,#000 85%,transparent);filter:saturate(1.05) contrast(1.04);box-shadow:0 30px 100px rgba(0,0,0,.65)}
+.floating-badge{position:absolute;z-index:3;bottom:75px;left:0;padding:16px 18px;border-radius:18px;background:rgba(8,8,9,.76);border:1px solid rgba(255,215,0,.25);backdrop-filter:blur(16px);box-shadow:var(--shadow)}
+.floating-badge strong{display:block;font:900 1.4rem Montserrat;color:var(--gold)}
+.floating-badge small{color:var(--silver)}
+
+.stats{margin-top:-40px;position:relative;z-index:5}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.stat{padding:24px;border-radius:20px;text-align:center}
+.stat strong{display:block;font:900 clamp(1.7rem,4vw,2.7rem) Montserrat;background:linear-gradient(90deg,var(--gold),var(--white));-webkit-background-clip:text;color:transparent}
+.stat span{color:var(--steel);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em}
+
+.about-grid{grid-template-columns:1.05fr .95fr;align-items:stretch}
+.about-card{padding:34px;border-radius:28px}
+.about-card p{color:var(--silver);margin-top:15px}
+.quote{margin-top:25px;padding:20px 22px;border-left:3px solid var(--gold);background:rgba(255,215,0,.045);color:var(--champ);font-weight:700}
+.info-grid{grid-template-columns:repeat(2,1fr)}
+.info-box{padding:23px;border-radius:20px}
+.info-box b{display:block;color:var(--gold);font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:6px}
+.info-box span{color:var(--silver);font-weight:700}
+
+.timeline{position:relative;margin-top:55px}
+.timeline:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(var(--gold),var(--violet),var(--cyan),transparent)}
+.timeline-item{width:50%;padding:0 45px 38px;position:relative}
+.timeline-item:nth-child(even){margin-left:50%}
+.timeline-item:before{content:"";position:absolute;right:-6px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 6px rgba(255,215,0,.10),0 0 22px var(--gold)}
+.timeline-item:nth-child(even):before{left:-6px;right:auto}
+.timeline-card{padding:24px;border-radius:22px}
+.timeline-year{color:var(--gold);font-weight:900;font-size:.8rem;letter-spacing:.15em}
+.timeline-card h3{font:900 1.3rem Montserrat;margin:7px 0}
+.timeline-card p{color:var(--silver);font-size:.92rem}
+
+.trophy-grid{grid-template-columns:repeat(4,1fr);margin-top:45px}
+.trophy{padding:28px;border-radius:24px;position:relative;overflow:hidden}
+.trophy:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;right:-45px;top:-45px;background:radial-gradient(circle,rgba(255,215,0,.20),transparent 70%)}
+.trophy-icon{font-size:2.2rem;margin-bottom:14px}
+.trophy strong{font:900 2rem Montserrat;color:var(--gold);display:block}
+.trophy h3{font-size:1rem;margin-top:3px}
+.trophy p{color:var(--steel);font-size:.82rem;margin-top:5px}
+
+.records{grid-template-columns:repeat(3,1fr);margin-top:45px}
+.record{padding:28px;border-radius:24px}
+.record .num{font:900 2.3rem Montserrat;color:var(--white)}
+.record .label{color:var(--gold);font-weight:800;margin-top:5px}
+.record p{color:var(--steel);font-size:.88rem;margin-top:7px}
+
+.visitor-section{padding:30px 0 0}
+.visitor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.visitor-card{padding:23px;border-radius:22px;display:flex;align-items:center;gap:16px}
+.visitor-icon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(255,215,0,.15),rgba(124,58,237,.14));font-size:1.35rem}
+.visitor-label{display:block;font-size:.68rem;letter-spacing:.15em;color:var(--steel);font-weight:900}
+.visitor-card strong{display:block;font:900 1.65rem Montserrat;margin:2px 0;background:linear-gradient(90deg,var(--gold),var(--white));-webkit-background-clip:text;color:transparent}
+.visitor-card small{color:var(--steel)}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:45px}
+.gallery-item{position:relative;overflow:hidden;border-radius:22px;min-height:220px;background:var(--graphite);border:1px solid var(--line)}
+.gallery-item:nth-child(1){grid-column:span 7;grid-row:span 2}.gallery-item:nth-child(2){grid-column:span 5}.gallery-item:nth-child(3){grid-column:span 5}.gallery-item:nth-child(4){grid-column:span 4}.gallery-item:nth-child(5){grid-column:span 4}.gallery-item:nth-child(6){grid-column:span 4}
+.gallery-item img{width:100%;height:100%;min-height:220px;object-fit:cover;transition:.6s}
+.gallery-item:hover img{transform:scale(1.07)}
+.gallery-caption{position:absolute;inset:auto 0 0;padding:28px 18px 18px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-weight:800}
+
+.customizer{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:45px}
+.panel{padding:28px;border-radius:24px}
+.panel h3{font:900 1.25rem Montserrat;margin-bottom:16px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:.75rem;color:var(--steel);font-weight:800;margin-bottom:7px}
+.field input,.field textarea{width:100%;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--white);border-radius:13px;padding:12px 13px;outline:none}
+.field textarea{min-height:100px;resize:vertical}
+.field input:focus,.field textarea:focus{border-color:rgba(255,215,0,.55)}
+.swatches{display:flex;flex-wrap:wrap;gap:9px}
+.swatch{width:34px;height:34px;border-radius:50%;border:2px solid rgba(255,255,255,.3);box-shadow:0 0 0 2px transparent;transition:.2s}
+.swatch:hover,.swatch.active{box-shadow:0 0 0 2px var(--white)}
+
+.owner-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:30px;align-items:center}
+.owner-card{padding:36px;border-radius:28px;text-align:center}
+.avatar-ring{width:190px;height:190px;padding:5px;border-radius:50%;margin:0 auto 20px;background:conic-gradient(var(--gold),var(--violet),var(--cyan),var(--ruby),var(--gold));box-shadow:0 0 50px rgba(255,215,0,.18);animation:spin 14s linear infinite}
+.avatar-inner{width:100%;height:100%;border-radius:50%;overflow:hidden;background:#050505;display:grid;place-items:center}
+.avatar-inner img{width:100%;height:100%;object-fit:cover}
+.owner-avatar-placeholder{font:900 3.2rem Montserrat;color:var(--gold)}
+.online-dot{width:16px;height:16px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(34,197,94,.10),0 0 18px var(--green);margin:-35px auto 20px;position:relative;border:3px solid #080808}
+.owner-card h3{font:900 1.7rem Montserrat}
+.owner-card p{color:var(--steel);font-size:.88rem}
+.socials{display:flex;justify-content:center;gap:9px;margin-top:17px;flex-wrap:wrap}
+.socials a{padding:9px 12px;border:1px solid var(--line);border-radius:11px;background:var(--glass);font-size:.8rem;font-weight:800}
+.socials a:hover{border-color:var(--gold);color:var(--gold)}
+.owner-copy{padding:35px;border-radius:28px}
+.owner-copy p{color:var(--silver);margin-top:13px}
+
+.cta{padding:70px 30px;border-radius:32px;text-align:center;overflow:hidden;position:relative;background:radial-gradient(circle at 50% 0,rgba(255,215,0,.16),transparent 45%),linear-gradient(135deg,rgba(124,58,237,.10),rgba(0,217,255,.06));border:1px solid rgba(255,215,0,.18)}
+.cta h2{font:900 clamp(2rem,5vw,4rem) Montserrat;line-height:1.05}
+.cta p{max-width:620px;margin:15px auto;color:var(--silver)}
+
+footer{padding:60px 0 30px;border-top:1px solid var(--line);background:rgba(0,0,0,.15)}
+.footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:35px}
+footer h4{font-weight:900;margin-bottom:13px}
+footer a,footer p{display:block;color:var(--steel);font-size:.87rem;margin:7px 0}
+footer a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid var(--line);margin-top:35px;padding-top:22px;display:flex;justify-content:space-between;gap:15px;color:var(--steel);font-size:.8rem}
+
+#topBtn{position:fixed;right:22px;bottom:22px;z-index:800;opacity:0;pointer-events:none;transform:translateY(15px);transition:.3s}
+.show-top{opacity:1!important;pointer-events:auto!important;transform:none!important}
+
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(12px);z-index:1500;display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal-box{width:min(650px,100%);padding:30px;border-radius:26px;position:relative}
+.close{position:absolute;right:16px;top:16px}
+.search-results{margin-top:18px;max-height:50vh;overflow:auto}
+.result{padding:13px;border-bottom:1px solid var(--line);display:block}
+.result:hover{background:var(--glass)}
+
+.cookie{position:fixed;left:20px;right:20px;bottom:20px;z-index:1400;display:none;align-items:center;justify-content:space-between;gap:20px;padding:18px 20px;border-radius:20px;background:rgba(15,15,18,.94);border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(18px)}
+.cookie.show{display:flex}
+.cookie p{color:var(--silver);font-size:.82rem}
+
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);opacity:0;pointer-events:none;padding:12px 17px;border-radius:12px;background:#111;color:#fff;border:1px solid var(--line);z-index:1800;transition:.3s;font-size:.85rem}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media(max-width:1000px){
+ .nav-links{display:none;position:absolute;top:78px;left:4%;right:4%;padding:12px;flex-direction:column;align-items:stretch;background:rgba(10,10,12,.96);border:1px solid var(--line);border-radius:18px}
+ .nav-links.open{display:flex}
+ .nav-links a{padding:13px}
+ .menu-btn{display:grid}
+ .hero-grid,.about-grid,.owner-grid,.customizer{grid-template-columns:1fr}
+ .hero{padding-top:120px}
+ .hero-photo{min-height:500px}
+ .hero-photo img{height:510px}
+ .stats-grid{grid-template-columns:repeat(2,1fr)}
+ .trophy-grid{grid-template-columns:repeat(2,1fr)}
+ .footer-grid{grid-template-columns:1.5fr 1fr 1fr}
+}
+@media(max-width:700px){
+ .section{padding:75px 0}
+ .hero h1{font-size:clamp(3.1rem,17vw,5rem)}
+ .hero-photo{min-height:430px}
+ .hero-photo img{height:440px}
+ .floating-badge{left:8px;bottom:40px}
+ .stats{margin-top:0}
+ .stats-grid,.visitor-grid,.trophy-grid,.records,.info-grid{grid-template-columns:1fr}
+ .timeline:before{left:7px}
+ .timeline-item,.timeline-item:nth-child(even){width:100%;margin-left:0;padding-left:30px;padding-right:0}
+ .timeline-item:before,.timeline-item:nth-child(even):before{left:1px;right:auto}
+ .gallery-grid{display:grid;grid-template-columns:1fr 1fr}
+ .gallery-item,.gallery-item:nth-child(n){grid-column:auto;grid-row:auto}
+ .gallery-item:first-child{grid-column:span 2}
+ .footer-grid{grid-template-columns:1fr 1fr}
+ .footer-bottom{flex-direction:column}
+ .cookie{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:430px){
+ .footer-grid{grid-template-columns:1fr}
+ .nav-actions .search-btn{display:none}
+ .hero-buttons .btn{width:100%}
+}
+
+/* ===== CR7 PREMIUM UPGRADE ===== */
+
+.nav-links a.owner-nav{
+  color:#111;
+  background:linear-gradient(135deg,var(--gold),var(--champ));
+  box-shadow:0 0 25px rgba(255,215,0,.18)
+}
+
+.nav-links a.owner-nav:hover{
+  transform:translateY(-2px);
+  box-shadow:0 0 38px rgba(255,215,0,.32)
+}
+
+.cr7-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,215,0,.22);
+  background:rgba(255,215,0,.045);
+  color:var(--champ);
+  font-size:.68rem;
+  font-weight:900;
+  letter-spacing:.1em;
+  text-transform:uppercase
+}
+
+.cr7-badge.live{
+  border-color:rgba(34,197,94,.22);
+  color:#84ffad;
+  background:rgba(34,197,94,.06)
+}
+
+.upgrade-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+  margin-top:42px
+}
+
+.upgrade-card{
+  padding:26px;
+  border-radius:23px;
+  position:relative;
+  overflow:hidden
+}
+
+.upgrade-card .eyebrow-mini{
+  font-size:.66rem;
+  letter-spacing:.13em;
+  color:var(--gold);
+  font-weight:900;
+  text-transform:uppercase
+}
+
+.upgrade-card h3{
+  font:900 1.18rem Montserrat;
+  margin:7px 0
+}
+
+.upgrade-card p{
+  color:var(--silver);
+  font-size:.85rem
+}
+
+.upgrade-card:after{
+  content:"";
+  position:absolute;
+  width:120px;
+  height:120px;
+  right:-50px;
+  bottom:-55px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(255,215,0,.17),transparent 70%)
+}
+
+.detail-grid{
+  display:grid;
+  grid-template-columns:1.12fr .88fr;
+  gap:22px;
+  margin-top:45px
+}
+
+.detail-card{
+  padding:30px;
+  border-radius:26px
+}
+
+.detail-card h3{
+  font:900 1.5rem Montserrat
+}
+
+.detail-card p{
+  color:var(--silver);
+  margin-top:11px
+}
+
+.detail-list{
+  display:grid;
+  gap:10px;
+  margin-top:18px
+}
+
+.detail-list div{
+  display:flex;
+  gap:10px;
+  padding:10px 0;
+  border-bottom:1px solid var(--line);
+  font-size:.86rem;
+  color:var(--silver)
+}
+
+.detail-list div:last-child{
+  border-bottom:0
+}
+
+.detail-list b{
+  color:var(--gold)
+}
+
+.data-note{
+  margin-top:18px;
+  padding:13px 15px;
+  border-radius:14px;
+  border:1px solid rgba(255,215,0,.16);
+  background:rgba(255,215,0,.04);
+  font-size:.76rem;
+  color:var(--steel)
+}
+
+.milestone-strip{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin-top:18px
+}
+
+.mile{
+  padding:16px;
+  border-radius:16px;
+  background:rgba(255,255,255,.035);
+  border:1px solid var(--line)
+}
+
+.mile b{
+  display:block;
+  font:900 1.45rem Montserrat;
+  color:var(--gold)
+}
+
+.mile span{
+  display:block;
+  color:var(--steel);
+  font-size:.69rem;
+  margin-top:3px
+}
+
+/* OWNER PREMIUM */
+
+.owner-feature{
+  position:relative;
+  padding:2px;
+  border-radius:32px;
+  background:linear-gradient(
+    135deg,
+    var(--gold),
+    var(--violet),
+    var(--cyan),
+    var(--gold)
+  );
+  box-shadow:0 0 70px rgba(255,215,0,.12)
+}
+
+.owner-feature-inner{
+  border-radius:30px;
+  padding:34px;
+  background:
+    radial-gradient(
+      circle at 10% 0,
+      rgba(255,215,0,.12),
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at 90% 100%,
+      rgba(124,58,237,.12),
+      transparent 25%
+    ),
+    var(--ink)
+}
+
+.owner-feature-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:16px;
+  margin-bottom:28px
+}
+
+.owner-pills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px
+}
+
+.owner-pill{
+  padding:7px 10px;
+  border-radius:999px;
+  font-size:.66rem;
+  font-weight:900;
+  letter-spacing:.1em;
+  text-transform:uppercase
+}
+
+.owner-pill.main{
+  background:linear-gradient(135deg,var(--gold),var(--champ));
+  color:#111
+}
+
+.owner-pill.alt{
+  color:var(--champ);
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.04)
+}
+
+.owner-feature-grid{
+  display:grid;
+  grid-template-columns:.72fr 1.28fr;
+  gap:30px;
+  align-items:center
+}
+
+.owner-feature-card{
+  padding:24px;
+  border-radius:25px;
+  text-align:center;
+  background:rgba(255,255,255,.035);
+  border:1px solid var(--line)
+}
+
+.owner-feature-card .owner-title{
+  font:900 1.8rem Montserrat;
+  margin-top:13px
+}
+
+.owner-feature-card .owner-role{
+  font-size:.72rem;
+  color:var(--gold);
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin-top:3px
+}
+
+.owner-feature-copy h3{
+  font:900 2rem Montserrat
+}
+
+.owner-feature-copy p{
+  color:var(--silver);
+  margin-top:12px
+}
+
+.owner-point-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin-top:18px
+}
+
+.owner-point{
+  padding:14px;
+  border-radius:15px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.03)
+}
+
+.owner-point b{
+  display:block;
+  color:var(--gold);
+  font-size:.67rem;
+  letter-spacing:.12em;
+  text-transform:uppercase
+}
+
+.owner-point span{
+  display:block;
+  color:var(--silver);
+  font-size:.8rem;
+  margin-top:4px
+}
+
+.owner-cta-row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:20px
+}
+
+.owner-identity-line{
+  margin-top:12px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:7px
+}
+
+.owner-identity-line span{
+  padding:6px 9px;
+  border-radius:999px;
+  border:1px solid rgba(255,215,0,.16);
+  background:rgba(255,215,0,.04);
+  color:var(--silver);
+  font-size:.66rem;
+  font-weight:800
+}
+
+.owner-contact-title{
+  margin-top:24px;
+  text-align:center;
+  color:var(--steel);
+  font-size:.66rem;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  font-weight:900
+}
+
+.owner-contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:9px;
+  margin-top:10px
+}
+
+.owner-contact{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  min-height:48px;
+  padding:9px 10px;
+  border-radius:13px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.035);
+  color:var(--silver);
+  font-size:.72rem;
+  font-weight:900;
+  transition:.25s
+}
+
+.owner-contact .contact-icon{
+  width:24px;
+  height:24px;
+  border-radius:8px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(
+    135deg,
+    rgba(255,215,0,.16),
+    rgba(124,58,237,.13)
+  );
+  color:var(--gold);
+  font-size:.73rem
+}
+
+.owner-contact:hover{
+  transform:translateY(-2px);
+  border-color:rgba(255,215,0,.45);
+  color:var(--white);
+  box-shadow:0 10px 30px rgba(0,0,0,.20)
+}
+
+.owner-feature-copy .owner-kicker{
+  color:var(--gold);
+  font-size:.68rem;
+  font-weight:900;
+  letter-spacing:.16em;
+  text-transform:uppercase
+}
+
+.owner-quote{
+  margin-top:18px;
+  padding:16px 18px;
+  border-left:3px solid var(--gold);
+  border-radius:0 15px 15px 0;
+  background:rgba(255,215,0,.04);
+  color:var(--champ);
+  font-size:.86rem;
+  font-weight:800
+}
+
+.detail-vault{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin-top:45px
+}
+
+.detail-tile{
+  padding:18px;
+  border-radius:18px;
+  background:rgba(255,255,255,.035);
+  border:1px solid var(--line);
+  transition:.25s
+}
+
+.detail-tile:hover{
+  transform:translateY(-3px);
+  border-color:rgba(255,215,0,.25)
+}
+
+.detail-tile .micro-label{
+  display:block;
+  color:var(--gold);
+  font-size:.63rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  font-weight:900
+}
+
+.detail-tile strong{
+  display:block;
+  color:var(--white);
+  font:900 1.1rem Montserrat;
+  margin-top:5px
+}
+
+.detail-tile p{
+  color:var(--steel);
+  font-size:.72rem;
+  margin-top:4px;
+  line-height:1.5
+}
+
+.stat-note{
+  display:inline-block;
+  margin-top:10px;
+  padding:4px 7px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  color:var(--steel);
+  font-size:.61rem;
+  font-weight:800
+}
+
+@media(max-width:1000px){
+  .detail-vault{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:700px){
+  .detail-vault{grid-template-columns:1fr}
+  .owner-contact-grid{grid-template-columns:1fr}
+}
+
+.lightbox{
+  position:fixed;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,0,0,.82);
+  backdrop-filter:blur(12px);
+  z-index:1700;
+  padding:18px
+}
+
+.lightbox.open{
+  display:flex
+}
+
+.lightbox-box{
+  width:min(1050px,100%);
+  padding:15px;
+  border-radius:25px;
+  background:#070707;
+  border:1px solid rgba(255,255,255,.12);
+  position:relative
+}
+
+.lightbox-img{
+  width:100%;
+  max-height:76vh;
+  object-fit:contain;
+  border-radius:18px
+}
+
+.lb-bar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  padding:10px 2px 0
+}
+
+.lb-caption{
+  color:#eee;
+  font-size:.82rem
+}
+
+.lb-actions{
+  display:flex;
+  gap:8px
+}
+
+@media(max-width:1000px){
+  .upgrade-grid,
+  .milestone-strip{
+    grid-template-columns:repeat(2,1fr)
+  }
+
+  .detail-grid,
+  .owner-feature-grid{
+    grid-template-columns:1fr
+  }
+}
+
+@media(max-width:700px){
+  .upgrade-grid,
+  .milestone-strip,
+  .owner-point-grid{
+    grid-template-columns:1fr
+  }
+
+  .owner-feature-inner{
+    padding:22px
+  }
+
+  .owner-feature-top{
+    flex-direction:column
+  }
+
+  .owner-feature-copy h3{
+    font-size:1.6rem
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="noise"></div>
+<div id="progress"></div>
+
+<header id="header">
+
+  <div class="container nav">
+
+    <a
+      class="logo"
+      href="#home"
+      aria-label="CR7 Legacy home"
+    >
+      <span class="logo-mark">CR7</span>
+      <span>LEGACY</span>
+    </a>
+
+    <nav
+      class="nav-links"
+      id="navLinks"
+      aria-label="Main navigation"
+    >
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#journey">Current</a>
+      <a href="#detail-vault">Details</a>
+      <a href="#career">Career</a>
+      <a href="#trophies">Trophies</a>
+      <a href="#records">Records</a>
+      <a href="#portugal">Portugal</a>
+      <a href="#gallery">Gallery</a>
+      <a
+        href="#owner"
+        class="owner-nav"
+      >
+        OWNER
+      </a>
+    </nav>
+
+    <div class="nav-actions">
+
+      <button
+        class="icon-btn search-btn"
+        id="searchBtn"
+        aria-label="Search"
+      >
+        ⌕
+      </button>
+
+      <button
+        class="icon-btn"
+        id="themeBtn"
+        aria-label="Toggle theme"
+      >
+        ☾
+      </button>
+
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+    </div>
+
+  </div>
+
+</header>
+
+<main id="home">
+
+<!-- HERO -->
+<section class="hero section">
+
+  <div class="container hero-grid">
+
+    <div class="reveal">
+
+      <span class="eyebrow">
+        <span class="pulse"></span>
+        The CR7 Legacy Experience
+      </span>
+
+      <h1>
+        Born to <span class="gold">Inspire.</span>
+        <br>
+        Built to <span class="gold">Win.</span>
+      </h1>
+
+      <p class="hero-copy">
+        A premium fan-made tribute to Cristiano Ronaldo —
+        celebrating the mentality, moments, records and relentless
+        pursuit that made CR7 one of football's defining icons.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a
+          class="btn btn-primary"
+          href="#about"
+        >
+          Explore the Legacy →
+        </a>
+
+        <button
+          class="btn btn-ghost"
+          id="openSearch"
+        >
+          ⌕ Search the site
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="hero-photo reveal">
+
+      <img
+        src="ronaldo.jpg"
+        alt="Cristiano Ronaldo"
+        onerror="this.style.opacity='.2'"
+      >
+
+      <div class="floating-badge">
+
+        <strong>SIUUU!</strong>
+
+        <small>
+          More than a player. A mindset.
+        </small>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- STATS -->
+<section class="stats">
+
+  <div class="container stats-grid">
+
+    <div class="stat glass reveal">
+      <strong>5×</strong>
+      <span>Ballon d'Or</span>
+    </div>
+
+    <div class="stat glass reveal">
+      <strong>5×</strong>
+      <span>Champions League</span>
+    </div>
+
+    <div class="stat glass reveal">
+      <strong>7×</strong>
+      <span>League Titles</span>
+    </div>
+
+    <div class="stat glass reveal">
+      <strong>1×</strong>
+      <span>Euro Champion</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- VISITOR -->
+<section class="visitor-section">
+
+  <div class="container visitor-grid">
+
+    <div class="visitor-card glass">
+
+      <div class="visitor-icon">
+        🟢
+      </div>
+
+      <div>
+
+        <span class="visitor-label">
+          LIVE VISITORS
+        </span>
+
+        <strong id="onlineVisitors">
+          —
+        </strong>
+
+        <small>
+          Fans online now
+        </small>
+
+      </div>
+
+    </div>
+
+    <div class="visitor-card glass">
+
+      <div class="visitor-icon">
+        👥
+      </div>
+
+      <div>
+
+        <span class="visitor-label">
+          TOTAL VISITS
+        </span>
+
+        <strong id="totalVisitors">
+          —
+        </strong>
+
+        <small>
+          All-time page visits
+        </small>
+
+      </div>
+
+    </div>
+
+    <div class="visitor-card glass">
+
+      <div class="visitor-icon">
+        ⚡
+      </div>
+
+      <div>
+
+        <span class="visitor-label">
+          SITE STATUS
+        </span>
+
+        <strong>
+          LIVE
+        </strong>
+
+        <small>
+          CR7 Legacy is online
+        </small>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CURRENT SNAPSHOT -->
+<section
+  class="section"
+  id="journey"
+  style="padding-top:70px"
+>
+
+  <div class="container">
+
+    <span class="section-kicker">
+      00 — Current CR7 Snapshot
+    </span>
+
+    <h2 class="section-title">
+      Still writing
+      <span>history.</span>
+    </h2>
+
+    <p class="section-sub">
+      A date-labelled snapshot keeps the site modern without pretending
+      that changing career statistics are permanent.
+    </p>
+
+    <div class="upgrade-grid">
+
+      <article class="glass upgrade-card reveal">
+
+        <span class="eyebrow-mini">
+          Career milestone
+        </span>
+
+        <h3>
+          979 career goals
+        </h3>
+
+        <p>
+          Reuters reported 979 total career goals on
+          23 September 2026: 833 for clubs and 146 for Portugal.
+        </p>
+
+      </article>
+
+      <article class="glass upgrade-card reveal">
+
+        <span class="eyebrow-mini">
+          Portugal
+        </span>
+
+        <h3>
+          146 international goals
+        </h3>
+
+        <p>
+          UEFA lists Ronaldo as the men's world-record
+          international scorer with 146 goals.
+        </p>
+
+      </article>
+
+      <article class="glass upgrade-card reveal">
+
+        <span class="eyebrow-mini">
+          Saudi Arabia
+        </span>
+
+        <h3>
+          2025/26 league champion
+        </h3>
+
+        <p>
+          Al Nassr won the Saudi Pro League in 2025/26;
+          Ronaldo scored twice in the decisive final-day
+          win over Damac.
+        </p>
+
+      </article>
+
+    </div>
+
+    <div class="data-note">
+      Latest verified research used for this update:
+      UEFA, FIFA, Real Madrid and Reuters.
+      Changing figures are date-labelled inside the page.
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section
+  class="section"
+  id="about"
+>
+
+  <div class="container">
+
+    <span class="section-kicker">
+      01 — The Icon
+    </span>
+
+    <h2 class="section-title">
+      More than
+      <span>football.</span>
+    </h2>
+
+    <p class="section-sub">
+      Cristiano Ronaldo's story is a combination of talent,
+      discipline, sacrifice, ambition and an extraordinary
+      ability to reinvent himself.
+    </p>
+
+    <div
+      class="grid about-grid"
+      style="margin-top:45px"
+    >
+
+      <article class="glass about-card reveal">
+
+        <h3
+          style="font:900 1.5rem Montserrat"
+        >
+          The mentality behind CR7
+        </h3>
+
+        <p>
+          From Madeira to the biggest stages in world football,
+          Ronaldo built a career around standards that rarely moved.
+          Training, recovery, competition and an obsession with
+          improvement became part of the identity.
+        </p>
+
+        <p>
+          The legacy is not only the goals or trophies.
+          It is the example of what happens when ambition meets
+          relentless work.
+        </p>
+
+        <div class="quote">
+          “Talent without working hard is nothing.”
+          — Cristiano Ronaldo
+        </div>
+
+      </article>
+
+      <div class="grid info-grid">
+
+        <div class="glass info-box reveal">
+          <b>Full Name</b>
+          <span>
+            Cristiano Ronaldo dos Santos Aveiro
+          </span>
+        </div>
+
+        <div class="glass info-box reveal">
+          <b>Born</b>
+          <span>
+            5 February 1985 · Funchal, Madeira
+          </span>
+        </div>
+
+        <div class="glass info-box reveal">
+          <b>Position</b>
+          <span>
+            Forward · No. 7
+          </span>
+        </div>
+
+        <div class="glass info-box reveal">
+          <b>Nationality</b>
+          <span>
+            Portuguese
+          </span>
+        </div>
+
+        <div class="glass info-box reveal">
+          <b>UEFA Profile Height</b>
+          <span>
+            185 cm
+          </span>
+        </div>
+
+        <div class="glass info-box reveal">
+          <b>Preferred Foot</b>
+          <span>
+            Right
+          </span>
+        </div>
+
+        <div class="glass info-box reveal">
+          <b>International Debut</b>
+          <span>
+            2003 · Portugal
+          </span>
+        </div>
+
+        <div class="glass info-box reveal">
+          <b>Sporting First Team</b>
+          <span>
+            14 Aug 2002 vs Inter
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DETAIL VAULT -->
+<section
+  class="section"
+  id="detail-vault"
+>
+
+  <div class="container">
+
+    <span class="section-kicker">
+      02 — CR7 Detail Vault
+    </span>
+
+    <h2 class="section-title">
+      The small details behind the
+      <span>big story.</span>
+    </h2>
+
+    <p class="section-sub">
+      A compact collection of career facts, turning points and identity details
+      that are easy to miss when you only look at the headline trophies.
+    </p>
+
+    <div class="detail-vault">
+
+      <article class="detail-tile glass reveal">
+        <span class="micro-label">Birthplace</span>
+        <strong>Funchal</strong>
+        <p>
+          Madeira, Portugal — the island where Ronaldo's journey began.
+        </p>
+      </article>
+
+      <article class="detail-tile glass reveal">
+        <span class="micro-label">Sporting</span>
+        <strong>14 Aug 2002</strong>
+        <p>
+          First-team debut against Inter Milan in the Champions League
+          qualifying round.
+        </p>
+      </article>
+
+      <article class="detail-tile glass reveal">
+        <span class="micro-label">Youth pathway</span>
+        <strong>Sporting CP</strong>
+        <p>
+          Sporting's official history notes seven years in the club's
+          youth academy.
+        </p>
+      </article>
+
+      <article class="detail-tile glass reveal">
+        <span class="micro-label">Old Trafford</span>
+        <strong>2003</strong>
+        <p>
+          The teenager moved to Manchester United and began his elite
+          European transformation.
+        </p>
+      </article>
+
+      <article class="detail-tile glass reveal">
+        <span class="micro-label">Breakout season</span>
+        <strong>2007/08</strong>
+        <p>
+          31 Premier League goals and 42 goals in all competitions for
+          Manchester United.
+        </p>
+      </article>
+
+      <article class="detail-tile glass reveal">
+        <span class="micro-label">First Ballon d'Or</span>
+        <strong>2008</strong>
+        <p>
+          The award arrived after his defining Premier League and
+          Champions League season.
+        </p>
+      </article>
+
+      <article class="detail-tile glass reveal">
+        <span class="micro-label">Madrid record</span>
+        <strong>451 goals</strong>
+        <p>
+          Real Madrid's official history lists 451 goals in
+          438 official appearances.
+        </p>
+      </article>
+
+      <article class="detail-tile glass reveal">
+        <span class="micro-label">Madrid longevity</span>
+        <strong>9 seasons</strong>
+        <p>
+          His 2009–2018 Real Madrid era became the core of his
+          European scoring legacy.
+        </p>
+      </article>
+
+      <article class="detail-tile glass reveal">
+        <span class="micro-label">Juventus</span>
+        <strong>101 goals</strong>
+        <p>
+          Juventus records 101 goals in 134 appearances across the
+          three-year chapter.
+        </p>
+      </article>
+
+      <article class="detail-tile glass reveal">
+        <span class="micro-label">Portugal record</span>
+        <strong>146 goals</strong>
+        <p>
+          UEFA's latest record page lists him as the men's
+          world-record international scorer.
+        </p>
+      </article>
+
+      <article class="detail-tile glass reveal">
+        <span class="micro-label">Portugal appearances</span>
+        <strong>234 caps</strong>
+        <p>
+          UEFA lists Ronaldo as the most-capped men's
+          international footballer.
+        </p>
+      </article>
+
+      <article class="detail-tile glass reveal">
+        <span class="micro-label">World Cups</span>
+        <strong>6 editions scored in</strong>
+        <p>
+          FIFA records him as the first man to score at
+          six different World Cups.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="data-note">
+      Detail sources: Sporting CP, UEFA, FIFA, Real Madrid, Juventus,
+      Premier League and Reuters. Current figures are date-sensitive
+      and should be refreshed when new matches change the totals.
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CAREER -->
+<section
+  class="section"
+  id="career"
+>
+
+  <div class="container">
+
+    <span class="section-kicker">
+      02 — The Journey
+    </span>
+
+    <h2 class="section-title">
+      A career written in
+      <span>chapters.</span>
+    </h2>
+
+    <p class="section-sub">
+      A visual timeline of the clubs and milestones that shaped
+      one of football's most recognizable careers.
+    </p>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+
+        <div class="glass timeline-card">
+
+          <span class="timeline-year">
+            2002
+          </span>
+
+          <h3>
+            Sporting CP
+          </h3>
+
+          <p>
+            The professional journey begins in Lisbon,
+            where a young Ronaldo announces himself.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="timeline-item reveal">
+
+        <div class="glass timeline-card">
+
+          <span class="timeline-year">
+            2003
+          </span>
+
+          <h3>
+            Manchester United
+          </h3>
+
+          <p>
+            A move to England begins a transformation from
+            exciting winger into global superstar.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="timeline-item reveal">
+
+        <div class="glass timeline-card">
+
+          <span class="timeline-year">
+            2009
+          </span>
+
+          <h3>
+            Real Madrid
+          </h3>
+
+          <p>
+            The next chapter becomes historic, filled with goals,
+            records, Champions League nights and individual honours.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="timeline-item reveal">
+
+        <div class="glass timeline-card">
+
+          <span class="timeline-year">
+            2018
+          </span>
+
+          <h3>
+            Juventus
+          </h3>
+
+          <p>
+            A new challenge in Italy, adding domestic success
+            and another league to the story.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="timeline-item reveal">
+
+        <div class="glass timeline-card">
+
+          <span class="timeline-year">
+            2021
+          </span>
+
+          <h3>
+            Manchester United Return
+          </h3>
+
+          <p>
+            A dramatic return to Old Trafford creates another
+            unforgettable chapter.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="timeline-item reveal">
+
+        <div class="glass timeline-card">
+
+          <span class="timeline-year">
+            2023 →
+          </span>
+
+          <h3>
+            Al Nassr
+          </h3>
+
+          <p>
+            A new era in Saudi Arabia expands the CR7 story
+            beyond Europe and into another football culture.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DEEP DIVE -->
+<section
+  class="section"
+  id="deep-dive"
+>
+
+  <div class="container">
+
+    <span class="section-kicker">
+      03 — Career Deep Dive
+    </span>
+
+    <h2 class="section-title">
+      Six clubs.
+      <span>Six identities.</span>
+    </h2>
+
+    <p class="section-sub">
+      Ronaldo's career is best understood as a sequence of reinventions:
+      every environment asked something different, and each chapter added
+      a new layer to his game.
+    </p>
+
+    <div class="detail-grid">
+
+      <article class="glass detail-card reveal">
+
+        <h3>
+          Early life & Sporting CP
+        </h3>
+
+        <p>
+          Madeira was the starting point. Sporting CP became the bridge
+          from youth football to elite competition, giving Ronaldo the
+          platform from which Manchester United could recruit him as
+          a teenager in 2003.
+        </p>
+
+        <div class="detail-list">
+
+          <div>
+            <b>✦</b>
+            <span>
+              Madeira → Lisbon was the first major move.
+            </span>
+          </div>
+
+          <div>
+            <b>✦</b>
+            <span>
+              Sporting's academy shaped his technical and athletic base.
+            </span>
+          </div>
+
+          <div>
+            <b>✦</b>
+            <span>
+              His performance against Manchester United became a
+              decisive turning point.
+            </span>
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="glass detail-card reveal">
+
+        <h3>
+          Manchester United → global superstar
+        </h3>
+
+        <p>
+          At Old Trafford he developed from a raw winger into a complete
+          forward. The 2007/08 season became the breakthrough: 42 goals
+          in all competitions, the Premier League title, the Champions
+          League and the Ballon d'Or.
+        </p>
+
+        <div class="milestone-strip">
+
+          <div class="mile">
+            <b>42</b>
+            <span>Goals · 2007/08</span>
+          </div>
+
+          <div class="mile">
+            <b>31</b>
+            <span>PL goals</span>
+          </div>
+
+          <div class="mile">
+            <b>1</b>
+            <span>UCL title</span>
+          </div>
+
+          <div class="mile">
+            <b>1</b>
+            <span>Ballon d'Or</span>
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="glass detail-card reveal">
+
+        <h3>
+          Real Madrid — the scoring era
+        </h3>
+
+        <p>
+          Real Madrid's official history records 451 goals in
+          438 official appearances. UEFA notes four Champions League
+          wins with Madrid: 2014, 2016, 2017 and 2018.
+        </p>
+
+        <div class="detail-list">
+
+          <div>
+            <b>451</b>
+            <span>
+              All-time Real Madrid goals.
+            </span>
+          </div>
+
+          <div>
+            <b>438</b>
+            <span>
+              Official appearances.
+            </span>
+          </div>
+
+          <div>
+            <b>4</b>
+            <span>
+              Champions League wins with Real Madrid.
+            </span>
+          </div>
+
+          <div>
+            <b>105</b>
+            <span>
+              Champions League goals during the Madrid period, per UEFA.
+            </span>
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="glass detail-card reveal">
+
+        <h3>
+          Juventus — adaptation in Italy
+        </h3>
+
+        <p>
+          The Juventus chapter proved the scoring model could travel.
+          Ronaldo won two Serie A titles, the Coppa Italia and finished
+          as the league's top scorer in 2020/21.
+        </p>
+
+        <div class="detail-list">
+
+          <div>
+            <b>2</b>
+            <span>
+              Serie A titles.
+            </span>
+          </div>
+
+          <div>
+            <b>1</b>
+            <span>
+              Coppa Italia.
+            </span>
+          </div>
+
+          <div>
+            <b>2020/21</b>
+            <span>
+              Serie A top scorer.
+            </span>
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="glass detail-card reveal">
+
+        <h3>
+          Manchester United — the return
+        </h3>
+
+        <p>
+          In 2021 Ronaldo returned to Old Trafford. His second debut
+          against Newcastle produced two goals and immediately
+          reconnected one of football's most recognisable players
+          with his old club.
+        </p>
+
+      </article>
+
+      <article class="glass detail-card reveal">
+
+        <h3>
+          Al Nassr — a new football frontier
+        </h3>
+
+        <p>
+          Ronaldo's Saudi chapter expanded the reach of his career
+          beyond Europe. In 2025/26, Al Nassr won the Saudi Pro League
+          for the first time since 2019, with Ronaldo scoring twice
+          in the title-clinching final-day win over Damac.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TROPHIES -->
+<section
+  class="section"
+  id="trophies"
+>
+
+  <div class="container">
+
+    <span class="section-kicker">
+      03 — The Cabinet
+    </span>
+
+    <h2 class="section-title">
+      A legacy measured in
+      <span>silverware.</span>
+    </h2>
+
+    <div class="grid trophy-grid">
+
+      <div class="glass trophy reveal">
+
+        <div class="trophy-icon">
+          🏆
+        </div>
+
+        <strong>
+          5
+        </strong>
+
+        <h3>
+          UEFA Champions League
+        </h3>
+
+        <p>
+          European club football's biggest prize.
+        </p>
+
+      </div>
+
+      <div class="glass trophy reveal">
+
+        <div class="trophy-icon">
+          🌍
+        </div>
+
+        <strong>
+          1
+        </strong>
+
+        <h3>
+          UEFA European Championship
+        </h3>
+
+        <p>
+          Portugal's historic continental triumph.
+        </p>
+
+      </div>
+
+      <div class="glass trophy reveal">
+
+        <div class="trophy-icon">
+          🥇
+        </div>
+
+        <strong>
+          5
+        </strong>
+
+        <h3>
+          Ballon d'Or
+        </h3>
+
+        <p>
+          Five of football's most prestigious individual awards.
+        </p>
+
+      </div>
+
+      <div class="glass trophy reveal">
+
+        <div class="trophy-icon">
+          🇪🇺
+        </div>
+
+        <strong>
+          4
+        </strong>
+
+        <h3>
+          European Golden Shoe
+        </h3>
+
+        <p>
+          Four times Europe's top league scorer.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- RECORDS -->
+<section
+  class="section"
+  id="records"
+>
+
+  <div class="container">
+
+    <span class="section-kicker">
+      06 — Records
+    </span>
+
+    <h2 class="section-title">
+      Numbers that tell the
+      <span>story.</span>
+    </h2>
+
+    <p class="section-sub">
+      Selected records from UEFA/FIFA-era documentation,
+      with dates shown where the numbers can change.
+    </p>
+
+    <div class="grid records">
+
+      <div class="glass record reveal">
+
+        <div class="num">
+          140
+        </div>
+
+        <div class="label">
+          Champions League goals
+        </div>
+
+        <p>
+          UEFA's all-time Champions League scoring record.
+        </p>
+
+      </div>
+
+      <div class="glass record reveal">
+
+        <div class="num">
+          145
+        </div>
+
+        <div class="label">
+          UEFA club competition goals
+        </div>
+
+        <p>
+          The most goals in UEFA club competitions.
+        </p>
+
+      </div>
+
+      <div class="glass record reveal">
+
+        <div class="num">
+          17
+        </div>
+
+        <div class="label">
+          Champions League goals in one season
+        </div>
+
+        <p>
+          Record set in 2013/14.
+        </p>
+
+      </div>
+
+      <div class="glass record reveal">
+
+        <div class="num">
+          146
+        </div>
+
+        <div class="label">
+          Portugal goals
+        </div>
+
+        <p>
+          World-record men's international scoring total.
+        </p>
+
+      </div>
+
+      <div class="glass record reveal">
+
+        <div class="num">
+          234
+        </div>
+
+        <div class="label">
+          Portugal appearances
+        </div>
+
+        <p>
+          Latest figure reported by Reuters in October 2026.
+        </p>
+
+      </div>
+
+      <div class="glass record reveal">
+
+        <div class="num">
+          6
+        </div>
+
+        <div class="label">
+          World Cups scored in
+        </div>
+
+        <p>
+          First player to score at six FIFA World Cups: 2006–2026.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PORTUGAL -->
+<section
+  class="section portugal"
+  id="portugal"
+>
+
+  <div class="container">
+
+    <span class="section-kicker">
+      11 — Portugal Legacy
+    </span>
+
+    <h2 class="section-title">
+      The captain, the
+      <span>records.</span>
+    </h2>
+
+    <p class="section-sub">
+      Ronaldo's Portugal chapter includes EURO 2016,
+      Nations League titles in 2019 and 2025, and global
+      international scoring and appearance records.
+    </p>
+
+    <div class="detail-grid">
+
+      <article class="glass detail-card reveal">
+
+        <h3>
+          Major tournament story
+        </h3>
+
+        <div class="detail-list">
+
+          <div>
+            <b>2004</b>
+            <span>
+              EURO debut on home soil as a teenage international.
+            </span>
+          </div>
+
+          <div>
+            <b>2016</b>
+            <span>
+              Portugal become European champions.
+            </span>
+          </div>
+
+          <div>
+            <b>2019</b>
+            <span>
+              Portugal win the inaugural Nations League title.
+            </span>
+          </div>
+
+          <div>
+            <b>2025</b>
+            <span>
+              Portugal win the Nations League again,
+              beating Spain on penalties.
+            </span>
+          </div>
+
+          <div>
+            <b>2026</b>
+            <span>
+              Scores at a sixth World Cup — a tournament record.
+            </span>
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="glass detail-card reveal">
+
+        <h3>
+          Latest international status
+        </h3>
+
+        <p>
+          As of early October 2026, Ronaldo's future with Portugal
+          is unresolved. Reuters reported that he left the national-team
+          camp during the Nations League window after a dispute around
+          his involvement; the federation and coach Jorge Jesus left
+          the door open for a return.
+        </p>
+
+        <div class="data-note">
+          This page intentionally says “international future unresolved”
+          rather than claiming retirement from Portugal.
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+<section
+  class="section"
+  id="gallery"
+>
+
+  <div class="container">
+
+    <span class="section-kicker">
+      05 — Visual Legacy
+    </span>
+
+    <h2 class="section-title">
+      Moments become
+      <span>memories.</span>
+    </h2>
+
+    <p class="section-sub">
+      Put your favourite CR7 images in the project folder
+      and replace the filenames below.
+    </p>
+
+    <div class="gallery-grid">
+
+      <div
+        class="gallery-item reveal"
+        data-lightbox="ronaldo.jpg"
+        data-caption="The Icon"
+      >
+        <img
+          src="ronaldo.jpg"
+          alt="Cristiano Ronaldo portrait"
+          loading="lazy"
+        >
+
+        <div class="gallery-caption">
+          The Icon
+        </div>
+      </div>
+
+      <div
+        class="gallery-item reveal"
+        data-lightbox="ronaldo2.jpg"
+        data-caption="The Journey"
+      >
+        <img
+          src="ronaldo2.jpg"
+          alt="CR7 gallery image"
+          loading="lazy"
+          onerror="this.src='ronaldo.jpg'"
+        >
+
+        <div class="gallery-caption">
+          The Journey
+        </div>
+      </div>
+
+      <div
+        class="gallery-item reveal"
+        data-lightbox="ronaldo3.jpg"
+        data-caption="The Celebration"
+      >
+        <img
+          src="ronaldo3.jpg"
+          alt="CR7 gallery image"
+          loading="lazy"
+          onerror="this.src='ronaldo.jpg'"
+        >
+
+        <div class="gallery-caption">
+          The Celebration
+        </div>
+      </div>
+
+      <div
+        class="gallery-item reveal"
+        data-lightbox="ronaldo4.jpg"
+        data-caption="The Champion"
+      >
+        <img
+          src="ronaldo4.jpg"
+          alt="CR7 gallery image"
+          loading="lazy"
+          onerror="this.src='ronaldo.jpg'"
+        >
+
+        <div class="gallery-caption">
+          The Champion
+        </div>
+      </div>
+
+      <div
+        class="gallery-item reveal"
+        data-lightbox="ronaldo5.jpg"
+        data-caption="The Focus"
+      >
+        <img
+          src="ronaldo5.jpg"
+          alt="CR7 gallery image"
+          loading="lazy"
+          onerror="this.src='ronaldo.jpg'"
+        >
+
+        <div class="gallery-caption">
+          The Focus
+        </div>
+      </div>
+
+      <div
+        class="gallery-item reveal"
+        data-lightbox="ronaldo6.jpg"
+        data-caption="The Legacy"
+      >
+        <img
+          src="ronaldo6.jpg"
+          alt="CR7 gallery image"
+          loading="lazy"
+          onerror="this.src='ronaldo.jpg'"
+        >
+
+        <div class="gallery-caption">
+          The Legacy
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CUSTOMIZER -->
+<section
+  class="section"
+  id="customizer"
+>
+
+  <div class="container">
+
+    <span class="section-kicker">
+      06 — Personalize
+    </span>
+
+    <h2 class="section-title">
+      Make the experience
+      <span>yours.</span>
+    </h2>
+
+    <p class="section-sub">
+      Customize the hero copy and accent palette.
+      Settings are saved in this browser.
+    </p>
+
+    <div class="customizer">
+
+      <div class="glass panel">
+
+        <h3>
+          Site content
+        </h3>
+
+        <div class="field">
+
+          <label>
+            Hero title
+          </label>
+
+          <input
+            id="heroTitleInput"
+            value="Born to Inspire."
+          >
+
+        </div>
+
+        <div class="field">
+
+          <label>
+            Tagline
+          </label>
+
+          <input
+            id="taglineInput"
+            value="Built to Win."
+          >
+
+        </div>
+
+        <div class="field">
+
+          <label>
+            About line
+          </label>
+
+          <textarea id="bioInput">A premium fan-made tribute to Cristiano Ronaldo — celebrating the mentality, moments, records and relentless pursuit that made CR7 one of football's defining icons.</textarea>
+
+        </div>
+
+        <button
+          class="btn btn-primary"
+          id="saveCustom"
+        >
+          Save customization
+        </button>
+
+      </div>
+
+      <div class="glass panel">
+
+        <h3>
+          Premium color palette
+        </h3>
+
+        <p
+          style="
+            color:var(--steel);
+            font-size:.88rem;
+            margin-bottom:15px
+          "
+        >
+          Choose an accent. The site keeps the gold/black
+          luxury identity while adding a secondary glow.
+        </p>
+
+        <div
+          class="swatches"
+          id="swatches"
+        ></div>
+
+        <div style="height:18px"></div>
+
+        <button
+          class="btn btn-ghost"
+          id="resetCustom"
+        >
+          Reset settings
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- OWNER -->
+<section
+  class="section"
+  id="owner"
+>
+
+  <div class="container">
+
+    <span class="section-kicker">
+      14 — Creator
+    </span>
+
+    <h2 class="section-title">
+      The fan behind the
+      <span>legacy.</span>
+    </h2>
+
+    <p class="section-sub">
+      A dedicated creator profile designed to feel like part of
+      the CR7 brand system — premium, visible and polished without
+      taking the spotlight away from Ronaldo.
+    </p>
+
+    <div
+      class="owner-feature"
+      style="margin-top:42px"
+    >
+
+      <div class="owner-feature-inner">
+
+        <div class="owner-feature-top">
+
+          <div class="owner-pills">
+
+            <span class="owner-pill main">
+              OWNER
+            </span>
+
+            <span class="owner-pill alt">
+              FOUNDER & CREATOR
+            </span>
+
+            <span class="owner-pill alt">
+              CR7 LEGACY
+            </span>
+
+          </div>
+
+          <div class="cr7-badge live">
+
+            <span class="status-dot"></span>
+
+            Site creator
+
+          </div>
+
+        </div>
+
+        <div class="owner-feature-grid">
+
+          <div class="owner-feature-card reveal">
+
+            <div class="avatar-ring">
+
+              <div class="avatar-inner">
+
+                <img
+                  src="owner.jpg"
+                  alt="Md. Jahidul Islam"
+                  loading="lazy"
+                  onerror="
+                    this.style.display='none';
+                    this.nextElementSibling.style.display='block'
+                  "
+                >
+
+                <span
+                  class="owner-avatar-placeholder"
+                  style="display:none"
+                >
+                  JI
+                </span>
+
+              </div>
+
+            </div>
+
+            <div class="owner-title">
+              Md. Jahidul Islam
+            </div>
+
+            <div class="owner-role">
+              Founder & Creator · CR7 LEGACY
+            </div>
+
+            <div class="owner-identity-line">
+
+              <span>
+                Digital Creator
+              </span>
+
+              <span>
+                CR7 Fan Project
+              </span>
+
+              <span>
+                Owner
+              </span>
+
+            </div>
+
+            <p
+              style="
+                color:var(--steel);
+                font-size:.82rem;
+                margin-top:11px
+              "
+            >
+              The creator behind this fan-made CR7 digital experience.
+            </p>
+
+            <div class="owner-contact-title">
+              Connect directly
+            </div>
+
+            <div class="owner-contact-grid">
+
+              <a
+                class="owner-contact"
+                href="https://www.facebook.com/jahidul.islam.707"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open Md. Jahidul Islam on Facebook"
+              >
+
+                <span class="contact-icon">
+                  f
+                </span>
+
+                Facebook
+
+              </a>
+
+              <a
+                class="owner-contact"
+                href="https://www.instagram.com/jahidul._.islam?stkn=dzdnbDY5NGUxZ2E5"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open Md. Jahidul Islam on Instagram"
+              >
+
+                <span class="contact-icon">
+                  ◎
+                </span>
+
+                Instagram
+
+              </a>
+
+              <a
+                class="owner-contact"
+                href="mailto:jahidul.islam001303@gmail.com"
+                aria-label="Email Md. Jahidul Islam"
+              >
+
+                <span class="contact-icon">
+                  ✉
+                </span>
+
+                Email
+
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="owner-feature-copy reveal">
+
+            <div class="owner-kicker">
+              Creator profile
+            </div>
+
+            <h3 style="margin-top:7px">
+              Built by a fan. Designed as a legacy.
+            </h3>
+
+            <p>
+              CR7 LEGACY is a personal fan project created to
+              celebrate Cristiano Ronaldo's career, mentality,
+              records and unforgettable moments. The idea is to
+              make the website feel more like a premium football
+              museum than a basic biography page.
+            </p>
+
+            <p>
+              The owner identity stays clear: this is a fan-made
+              experience created and curated by Md. Jahidul Islam,
+              while Cristiano Ronaldo remains the central subject.
+            </p>
+
+            <div class="owner-point-grid">
+
+              <div class="owner-point">
+                <b>Creator</b>
+                <span>
+                  Md. Jahidul Islam
+                </span>
+              </div>
+
+              <div class="owner-point">
+                <b>Project</b>
+                <span>
+                  CR7 LEGACY
+                </span>
+              </div>
+
+              <div class="owner-point">
+                <b>Purpose</b>
+                <span>
+                  Fan-made digital tribute
+                </span>
+              </div>
+
+              <div class="owner-point">
+                <b>Style</b>
+                <span>
+                  Premium football experience
+                </span>
+              </div>
+
+            </div>
+
+            <div class="owner-quote">
+              “The website is built with the same idea as the CR7 story:
+              ambition, consistency, evolution and legacy.”
+            </div>
+
+            <div class="owner-cta-row">
+
+              <a
+                class="btn btn-primary"
+                href="mailto:jahidul.islam001303@gmail.com"
+              >
+                Email Owner
+              </a>
+
+              <a
+                class="btn btn-ghost"
+                href="https://www.facebook.com/jahidul.islam.707"
+                target="_blank"
+                rel="noopener"
+              >
+                Facebook
+              </a>
+
+              <a
+                class="btn btn-ghost"
+                href="https://www.instagram.com/jahidul._.islam?stkn=dzdnbDY5NGUxZ2E5"
+                target="_blank"
+                rel="noopener"
+              >
+                Instagram
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="section">
+
+  <div class="container">
+
+    <div class="cta reveal">
+
+      <h2>
+        THE LEGACY
+        <span style="color:var(--gold)">
+          LIVES ON.
+        </span>
+      </h2>
+
+      <p>
+        Every goal becomes a memory.
+        Every record becomes a chapter.
+        Every generation gets its own CR7 moment.
+      </p>
+
+      <a
+        class="btn btn-primary"
+        href="#home"
+      >
+        Back to the top ↑
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <a
+          class="logo"
+          href="#home"
+        >
+          <span class="logo-mark">
+            CR7
+          </span>
+
+          <span>
+            LEGACY
+          </span>
+
+        </a>
+
+        <p
+          style="
+            margin-top:15px;
+            max-width:330px
+          "
+        >
+          A fan-made digital tribute celebrating
+          Cristiano Ronaldo's football legacy.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h4>
+          Explore
+        </h4>
+
+        <a href="#about">
+          About CR7
+        </a>
+
+        <a href="#journey">
+          Current
+        </a>
+
+        <a href="#detail-vault">
+          Details
+        </a>
+
+        <a href="#career">
+          Career
+        </a>
+
+        <a href="#trophies">
+          Trophies
+        </a>
+
+        <a href="#records">
+          Records
+        </a>
+
+      </div>
+
+      <div>
+
+        <h4>
+          Experience
+        </h4>
+
+        <a href="#portugal">
+          Portugal
+        </a>
+
+        <a href="#gallery">
+          Gallery
+        </a>
+
+        <a href="#customizer">
+          Customizer
+        </a>
+
+        <a href="#owner">
+          OWNER
+        </a>
+
+        <button
+          id="footerSearch"
+          style="
+            background:none;
+            border:0;
+            color:var(--steel);
+            padding:0;
+            margin-top:7px;
+            cursor:pointer
+          "
+        >
+          Search site
+        </button>
+
+      </div>
+
+      <div>
+
+        <h4>
+          Owner
+        </h4>
+
+        <a href="#owner">
+          Md. Jahidul Islam
+        </a>
+
+        <a
+          href="https://www.facebook.com/jahidul.islam.707"
+          target="_blank"
+          rel="noopener"
+        >
+          Facebook
+        </a>
+
+        <a
+          href="https://www.instagram.com/jahidul._.islam?stkn=dzdnbDY5NGUxZ2E5"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
+
+        <a href="mailto:jahidul.islam001303@gmail.com">
+          Email
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        © <span id="year"></span>
+        CR7 LEGACY.
+        Fan-made project.
+      </span>
+
+      <span>
+        Built with passion for football.
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- TOP -->
+<button
+  class="icon-btn"
+  id="topBtn"
+  aria-label="Back to top"
+>
+  ↑
+</button>
+
+<!-- SEARCH MODAL -->
+<div
+  class="modal"
+  id="searchModal"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Search"
+>
+
+  <div class="glass modal-box">
+
+    <button
+      class="icon-btn close"
+      id="closeSearch"
+    >
+      ×
+    </button>
+
+    <h2
+      style="font:900 1.7rem Montserrat"
+    >
+      Search CR7 LEGACY
+    </h2>
+
+    <div
+      class="field"
+      style="margin-top:20px"
+    >
+
+      <input
+        id="searchInput"
+        placeholder="Try: trophies, career, records..."
+        autofocus
+      >
+
+    </div>
+
+    <div
+      class="search-results"
+      id="searchResults"
+    ></div>
+
+  </div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div
+  class="lightbox"
+  id="lightbox"
+  role="dialog"
+  aria-modal="true"
+  aria-label="CR7 image viewer"
+>
+
+  <div class="lightbox-box">
+
+    <button
+      class="icon-btn close"
+      id="lbClose"
+      aria-label="Close image viewer"
+    >
+      ×
+    </button>
+
+    <img
+      class="lightbox-img"
+      id="lbImg"
+      src=""
+      alt="CR7 gallery image"
+    >
+
+    <div class="lb-bar">
+
+      <div
+        class="lb-caption"
+        id="lbCaption"
+      ></div>
+
+      <div class="lb-actions">
+
+        <button
+          class="btn btn-ghost"
+          id="lbPrev"
+        >
+          ←
+        </button>
+
+        <button
+          class="btn btn-ghost"
+          id="lbNext"
+        >
+          →
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- COOKIE -->
+<div
+  class="cookie"
+  id="cookie"
+>
+
+  <p>
+    This site uses essential local storage for preferences
+    and anonymous visitor counting. No personal profile is required.
+  </p>
+
+  <button
+    class="btn btn-primary"
+    id="cookieOk"
+  >
+    Got it
+  </button>
+
+</div>
+
+<div
+  class="toast"
+  id="toast"
+></div>
+
+<script>
+
+/* ===========================
+   CR7 LEGACY — APP ENGINE
+=========================== */
+
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+
+
+/* YEAR */
+
+$('#year').textContent =
+  new Date().getFullYear();
+
+
+/* HEADER / PROGRESS */
+
+window.addEventListener('scroll',()=>{
+
+  const y = scrollY;
+
+  $('#header')
+    .classList
+    .toggle(
+      'scrolled',
+      y > 20
+    );
+
+  $('#topBtn')
+    .classList
+    .toggle(
+      'show-top',
+      y > 600
+    );
+
+  const h =
+    document.documentElement.scrollHeight -
+    innerHeight;
+
+  $('#progress').style.width =
+    (
+      h > 0
+        ? (y / h) * 100
+        : 0
+    ) + '%';
+
+
+  const ids = [
+
+    'home',
+    'about',
+    'journey',
+    'detail-vault',
+    'career',
+    'trophies',
+    'records',
+    'portugal',
+    'gallery',
+    'owner'
+
+  ];
+
+  const pos =
+    y + 130;
+
+
+  ids.forEach(
+    id => {
+
+      const el =
+        document.getElementById(id);
+
+      const link =
+        document.querySelector(
+          `.nav-links a[href="#${id}"]`
+        );
+
+
+      if(
+        el &&
+        link
+      ){
+
+        link.classList.toggle(
+          'active',
+          pos >= el.offsetTop &&
+          pos <
+            el.offsetTop +
+            el.offsetHeight
+        );
+
+      }
+
+    }
+  );
+
+});
+
+
+/* TOP BUTTON */
+
+$('#topBtn').onclick =
+  () =>
+    scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+
+
+/* MOBILE NAV */
+
+$('#menuBtn').onclick =
+  () =>
+    $('#navLinks')
+      .classList
+      .toggle('open');
+
+
+$$('#navLinks a').forEach(
+  a =>
+    a.onclick =
+      () =>
+        $('#navLinks')
+          .classList
+          .remove('open')
+);
+
+
+/* REVEAL */
+
+const io =
+  new IntersectionObserver(
+    entries =>
+      entries.forEach(
+        e => {
+
+          if(
+            e.isIntersecting
+          ){
+
+            e.target
+              .classList
+              .add('show');
+
+            io.unobserve(
+              e.target
+            );
+
+          }
+
+        }
+      ),
+    {
+      threshold:.12
+    }
+  );
+
+
+$$('.reveal')
+  .forEach(
+    e =>
+      io.observe(e)
+  );
+
+
+/* THEME */
+
+const savedTheme =
+  localStorage.getItem(
+    'cr7-theme'
+  );
+
+
+if(
+  savedTheme === 'light'
+){
+
+  document.body
+    .classList
+    .add('light');
+
+}
+
+
+$('#themeBtn').onclick =
+  () => {
+
+    document.body
+      .classList
+      .toggle('light');
+
+
+    const light =
+      document.body
+        .classList
+        .contains('light');
+
+
+    localStorage.setItem(
+      'cr7-theme',
+      light
+        ? 'light'
+        : 'dark'
+    );
+
+
+    $('#themeBtn')
+      .textContent =
+      light
+        ? '☀'
+        : '☾';
+
+  };
+
+
+/* SEARCH */
+
+const pages = [
+
+  [
+    'Home',
+    'The premium CR7 Legacy hero experience.',
+    '#home'
+  ],
+
+  [
+    'Current Snapshot',
+    '979 career goals, 146 Portugal goals, latest 2026 updates.',
+    '#journey'
+  ],
+
+  [
+    'About',
+    'Cristiano Ronaldo biography, early life, profile and mentality.',
+    '#about'
+  ],
+
+  [
+    'Details',
+    'Small CR7 facts, Sporting debut, club milestones, Portugal and World Cup details.',
+    '#detail-vault'
+  ],
+
+  [
+    'Career',
+    'Sporting CP, Manchester United, Real Madrid, Juventus, Manchester United and Al Nassr.',
+    '#career'
+  ],
+
+  [
+    'Deep Dive',
+    'The major club eras and how Ronaldo evolved.',
+    '#deep-dive'
+  ],
+
+  [
+    'Trophies',
+    'Champions League, Premier League, La Liga, Serie A, Portugal trophies and individual awards.',
+    '#trophies'
+  ],
+
+  [
+    'Records',
+    'Champions League, international, World Cup and career records.',
+    '#records'
+  ],
+
+  [
+    'Portugal',
+    'EURO 2016, Nations League 2019/2025, World Cups and international records.',
+    '#portugal'
+  ],
+
+  [
+    'Gallery',
+    'CR7 visual gallery.',
+    '#gallery'
+  ],
+
+  [
+    'Customizer',
+    'Personalize the website and premium colors.',
+    '#customizer'
+  ],
+
+  [
+    'Owner',
+    'Md. Jahidul Islam — Founder & Creator of CR7 LEGACY.',
+    '#owner'
+  ]
+
+];
+
+
+function openSearch(){
+
+  $('#searchModal')
+    .classList
+    .add('open');
+
+  $('#searchInput')
+    .focus();
+
+  renderSearch('');
+
+}
+
+
+function closeSearch(){
+
+  $('#searchModal')
+    .classList
+    .remove('open');
+
+}
+
+
+$('#searchBtn')
+  .onclick =
+  openSearch;
+
+
+$('#openSearch')
+  .onclick =
+  openSearch;
+
+
+$('#footerSearch')
+  .onclick =
+  openSearch;
+
+
+$('#closeSearch')
+  .onclick =
+  closeSearch;
+
+
+$('#searchModal')
+  .addEventListener(
+    'click',
+    e => {
+
+      if(
+        e.target.id ===
+        'searchModal'
+      ){
+
+        closeSearch();
+
+      }
+
+    }
+  );
+
+
+function renderSearch(q){
+
+  const query =
+    q
+      .trim()
+      .toLowerCase();
+
+
+  const results =
+    pages.filter(
+      p =>
+        (
+          p[0] +
+          ' ' +
+          p[1]
+        )
+        .toLowerCase()
+        .includes(query)
+    );
+
+
+  $('#searchResults')
+    .innerHTML =
+
+      results
+
+        .map(
+          p =>
+            `
+              <a
+                class="result"
+                href="${p[2]}"
+              >
+
+                <strong>
+                  ${p[0]}
+                </strong>
+
+                <br>
+
+                <small
+                  style="color:var(--steel)"
+                >
+                  ${p[1]}
+                </small>
+
+              </a>
+            `
+        )
+
+        .join('')
+
+      ||
+
+      `
+        <p style="color:var(--steel)">
+          No result found.
+        </p>
+      `;
+
+}
+
+
+$('#searchInput')
+  .addEventListener(
+    'input',
+    e =>
+      renderSearch(
+        e.target.value
+      )
+  );
+
+
+document.addEventListener(
+  'keydown',
+  e => {
+
+    if(
+      e.key ===
+      'Escape'
+    ){
+
+      closeSearch();
+
+      closeLightbox();
+
+    }
+
+
+    if(
+      (e.ctrlKey ||
+       e.metaKey) &&
+      e.key.toLowerCase() ===
+      'k'
+    ){
+
+      e.preventDefault();
+
+      openSearch();
+
+    }
+
+  }
+);
+
+
+/* PREMIUM PALETTE */
+
+const palettes = [
+
+  ['Gold','#FFD700'],
+  ['Champagne','#F6E7B0'],
+  ['Amber','#FF9800'],
+  ['Royal','#4169E1'],
+
+  ['Blue','#1E88FF'],
+  ['Cyan','#00D9FF'],
+  ['Violet','#7C3AED'],
+  ['Purple','#A855F7'],
+
+  ['Emerald','#00C896'],
+  ['Mint','#65FFD6'],
+  ['Green','#22C55E'],
+  ['Neon','#B6FF00'],
+
+  ['Crimson','#DC143C'],
+  ['Ruby','#FF1744'],
+  ['Coral','#FF6B6B'],
+  ['Orange','#FF6D00'],
+
+  ['Sunset','#FF8A65'],
+  ['Ice','#BDEBFF'],
+  ['Silver','#D7D9DE'],
+  ['White','#FFFFFF'],
+
+  ['Rose','#F43F5E'],
+  ['Indigo','#6366F1'],
+  ['Sky','#38BDF8'],
+  ['Lime','#84CC16'],
+
+  ['Teal','#14B8A6'],
+  ['Fuchsia','#D946EF'],
+  ['Copper','#B87333'],
+  ['Platinum','#E5E4E2']
+
+];
+
+
+const swatches =
+  $('#swatches');
+
+
+palettes.forEach(
+  ([name,color]) => {
+
+    const b =
+      document.createElement(
+        'button'
+      );
+
+
+    b.className =
+      'swatch';
+
+
+    b.title =
+      name;
+
+
+    b.style.background =
+      color;
+
+
+    b.dataset.color =
+      color;
+
+
+    b.onclick =
+      () => {
+
+        document.documentElement
+          .style
+          .setProperty(
+            '--gold',
+            color
+          );
+
+
+        document.documentElement
+          .style
+          .setProperty(
+            '--gold2',
+            color
+          );
+
+
+        localStorage.setItem(
+          'cr7-accent',
+          color
+        );
+
+
+        $$('.swatch')
+          .forEach(
+            x =>
+              x.classList
+               .remove('active')
+          );
+
+
+        b.classList
+          .add('active');
+
+
+        toast(
+          name +
+          ' accent applied'
+        );
+
+      };
+
+
+    swatches
+      .appendChild(b);
+
+  }
+);
+
+
+const accent =
+  localStorage.getItem(
+    'cr7-accent'
+  );
+
+
+if(accent){
+
+  document.documentElement
+    .style
+    .setProperty(
+      '--gold',
+      accent
+    );
+
+
+  document.documentElement
+    .style
+    .setProperty(
+      '--gold2',
+      accent
+    );
+
+
+  const s =
+    $(
+      `.swatch[data-color="${accent}"]`
+    );
+
+
+  if(s){
+
+    s.classList
+      .add('active');
+
+  }
+
+}
+
+
+/* GALLERY LIGHTBOX */
+
+const galleryItems =
+  $$('.gallery-item[data-lightbox]');
+
+
+let galleryIndex =
+  0;
+
+
+function showLightbox(i){
+
+  if(
+    !galleryItems.length
+  )
+    return;
+
+
+  galleryIndex =
+    (
+      i +
+      galleryItems.length
+    )
+    %
+    galleryItems.length;
+
+
+  const item =
+    galleryItems[
+      galleryIndex
+    ];
+
+
+  const img =
+    item.querySelector(
+      'img'
+    );
+
+
+  $('#lbImg').src =
+    item.dataset.lightbox ||
+    img.src;
+
+
+  $('#lbImg').alt =
+    img.alt ||
+    item.dataset.caption ||
+    'CR7 image';
+
+
+  $('#lbCaption')
+    .textContent =
+    item.dataset.caption ||
+    '';
+
+
+  $('#lightbox')
+    .classList
+    .add('open');
+
+}
+
+
+function closeLightbox(){
+
+  $('#lightbox')
+    .classList
+    .remove('open');
+
+}
+
+
+galleryItems.forEach(
+  (item,i) =>
+
+    item.addEventListener(
+      'click',
+      () =>
+        showLightbox(i)
+    )
+);
+
+
+$('#lbClose')
+  .onclick =
+  closeLightbox;
+
+
+$('#lbPrev')
+  .onclick =
+  () =>
+    showLightbox(
+      galleryIndex - 1
+    );
+
+
+$('#lbNext')
+  .onclick =
+  () =>
+    showLightbox(
+      galleryIndex + 1
+    );
+
+
+$('#lightbox')
+  .addEventListener(
+    'click',
+    e => {
+
+      if(
+        e.target.id ===
+        'lightbox'
+      ){
+
+        closeLightbox();
+
+      }
+
+    }
+  );
+
+
+document.addEventListener(
+  'keydown',
+  e => {
+
+    if(
+      !$('#lightbox')
+        .classList
+        .contains('open')
+    )
+      return;
+
+
+    if(
+      e.key ===
+      'ArrowLeft'
+    ){
+
+      showLightbox(
+        galleryIndex - 1
+      );
+
+    }
+
+
+    if(
+      e.key ===
+      'ArrowRight'
+    ){
+
+      showLightbox(
+        galleryIndex + 1
+      );
+
+    }
+
+  }
+);
+
+
+/* CONTENT CUSTOMIZATION */
+
+const heroH1 =
+  $('.hero h1');
+
+
+const heroCopy =
+  $('.hero-copy');
+
+
+const saved =
+  JSON.parse(
+    localStorage.getItem(
+      'cr7-custom'
+    ) || 'null'
+  );
+
+
+if(saved){
+
+  $('#heroTitleInput')
+    .value =
+    saved.title ||
+    $('#heroTitleInput')
+      .value;
+
+
+  $('#taglineInput')
+    .value =
+    saved.tag ||
+    $('#taglineInput')
+      .value;
+
+
+  $('#bioInput')
+    .value =
+    saved.bio ||
+    $('#bioInput')
+      .value;
+
+}
+
+
+function applyCustom(){
+
+  const title =
+    $('#heroTitleInput')
+      .value
+      .trim()
+    ||
+    'Born to Inspire.';
+
+
+  const tag =
+    $('#taglineInput')
+      .value
+      .trim()
+    ||
+    'Built to Win.';
+
+
+  const bio =
+    $('#bioInput')
+      .value
+      .trim();
+
+
+  heroH1.innerHTML =
+    title.replace(
+      /\.$/,
+      '<span class="gold">.</span>'
+    )
+    +
+    '<br>'
+    +
+    tag.replace(
+      /\.$/,
+      '<span class="gold">.</span>'
+    );
+
+
+  if(bio){
+
+    heroCopy.textContent =
+      bio;
+
+  }
+
+}
+
+
+$('#saveCustom')
+  .onclick =
+  () => {
+
+    const data = {
+
+      title:
+        $('#heroTitleInput')
+          .value,
+
+      tag:
+        $('#taglineInput')
+          .value,
+
+      bio:
+        $('#bioInput')
+          .value
+
+    };
+
+
+    localStorage.setItem(
+      'cr7-custom',
+      JSON.stringify(data)
+    );
+
+
+    applyCustom();
+
+
+    toast(
+      'Customization saved'
+    );
+
+  };
+
+
+$('#resetCustom')
+  .onclick =
+  () => {
+
+    localStorage.removeItem(
+      'cr7-custom'
+    );
+
+    localStorage.removeItem(
+      'cr7-accent'
+    );
+
+    location.reload();
+
+  };
+
+
+/* COOKIE */
+
+if(
+  localStorage.getItem(
+    'cr7-cookie'
+  ) !== '1'
+){
+
+  $('#cookie')
+    .classList
+    .add('show');
+
+}
+
+
+$('#cookieOk')
+  .onclick =
+  () => {
+
+    localStorage.setItem(
+      'cr7-cookie',
+      '1'
+    );
+
+    $('#cookie')
+      .classList
+      .remove('show');
+
+  };
+
+
+/* TOAST */
+
+let toastTimer;
+
+
+function toast(msg){
+
+  const t =
+    $('#toast');
+
+
+  t.textContent =
+    msg;
+
+
+  t.classList
+    .add('show');
+
+
+  clearTimeout(
+    toastTimer
+  );
+
+
+  toastTimer =
+    setTimeout(
+      () =>
+        t.classList
+         .remove('show'),
+      2200
+    );
+
+}
+
+
+/* LOCAL VISITOR FALLBACK */
+
+let localVisits =
+  Number(
+    localStorage.getItem(
+      'cr7-local-visits'
+    ) ||
+    0
+  ) + 1;
+
+
+localStorage.setItem(
+  'cr7-local-visits',
+  localVisits
+);
+
+
+$('#totalVisitors')
+  .textContent =
+  localVisits.toLocaleString();
+
+
+$('#onlineVisitors')
+  .textContent =
+  '1';
+
+
+/* =========================================
+   FIREBASE REAL-TIME VISITOR SYSTEM
+
+   1. Create Firebase project
+   2. Enable Realtime Database
+   3. Put your config here
+   4. Set FIREBASE_ENABLED = true
+========================================= */
+
+const FIREBASE_ENABLED =
+  false;
+
+
+const firebaseConfig = {
+
+  apiKey:
+    "YOUR_API_KEY",
+
+  authDomain:
+    "YOUR_PROJECT.firebaseapp.com",
+
+  databaseURL:
+    "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
+
+  projectId:
+    "YOUR_PROJECT",
+
+  storageBucket:
+    "YOUR_PROJECT.firebasestorage.app",
+
+  messagingSenderId:
+    "YOUR_SENDER_ID",
+
+  appId:
+    "YOUR_APP_ID"
+
+};
+
+
+async function startFirebaseVisitors(){
+
+  if(
+    !FIREBASE_ENABLED
+  )
+    return;
+
+
+  try{
+
+    const {
+      initializeApp
+    } =
+      await import(
+        "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"
+      );
+
+
+    const {
+      getDatabase,
+      ref,
+      set,
+      onValue,
+      onDisconnect,
+      increment
+    } =
+      await import(
+        "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js"
+      );
+
+
+    const app =
+      initializeApp(
+        firebaseConfig
+      );
+
+
+    const db =
+      getDatabase(
+        app
+      );
+
+
+    const id =
+      (
+        crypto.randomUUID
+        ? crypto.randomUUID()
+        : Date.now() +
+          '-' +
+          Math.random()
+      );
+
+
+    const visitor =
+      ref(
+        db,
+        'onlineVisitors/' +
+        id
+      );
+
+
+    await set(
+      visitor,
+      {
+        joinedAt:
+          Date.now(),
+
+        device:
+          /Mobi|Android/i.test(
+            navigator.userAgent
+          )
+          ? 'mobile'
+          : 'desktop'
+      }
+    );
+
+
+    onDisconnect(
+      visitor
+    ).remove();
+
+
+    onValue(
+      ref(
+        db,
+        'onlineVisitors'
+      ),
+      snap => {
+
+        $('#onlineVisitors')
+          .textContent =
+          Object.keys(
+            snap.val() ||
+            {}
+          )
+          .length
+          .toLocaleString();
+
+      }
+    );
+
+
+    const total =
+      ref(
+        db,
+        'stats/totalVisitors'
+      );
+
+
+    await set(
+      total,
+      increment(1)
+    );
+
+
+    onValue(
+      total,
+      snap => {
+
+        $('#totalVisitors')
+          .textContent =
+          Number(
+            snap.val() ||
+            0
+          )
+          .toLocaleString();
+
+      }
+    );
+
+
+  }
+  catch(err){
+
+    console.warn(
+      'Firebase visitor system unavailable:',
+      err
+    );
+
+  }
+
+}
+
+
+startFirebaseVisitors();
+
+
+/* BASIC KEYBOARD ACCESSIBILITY */
+
+document.addEventListener(
+  'keydown',
+  e => {
+
+    if(
+      e.key ===
+      'Tab'
+    ){
+
+      document.body
+        .classList
+        .add(
+          'keyboard-nav'
+        );
+
+    }
+
+  }
+);
+
+
+/*
+PWA-like install metadata can be added later with a separate
+manifest/service worker. A single HTML file cannot reliably
+register a service worker on every hosting setup.
+*/
+
+</script>
+
+<!--
+============================================================
+FOLDER STRUCTURE
+============================================================
+
+CR7-Legacy/
+├── index.html
+├── ronaldo.jpg
+├── ronaldo2.jpg
+├── ronaldo3.jpg
+├── ronaldo4.jpg
+├── ronaldo5.jpg
+├── ronaldo6.jpg
+└── owner.jpg
+
+IMPORTANT:
+
+- The site works immediately as a static website.
+- Firebase real-time visitors require your own Firebase config.
+- Change FIREBASE_ENABLED to true after adding that config.
+- Do not put private API secrets in this HTML.
+
+============================================================
+-->
+
+<!--
+CR7 PREMIUM UPGRADE NOTES
+
+- Owner details intentionally preserved from the previous site.
+- Owner navigation is highlighted as OWNER.
+- New Ronaldo sections are integrated into the existing single-file architecture.
+- Time-sensitive data is date-labelled.
+- The site is fan-made and is not affiliated with Cristiano Ronaldo,
+  UEFA, FIFA, Real Madrid, Manchester United, Juventus, Al Nassr
+  or Portugal Football Federation.
+-->
+
+<!--
+Research refresh: October 2026
+
+Key verified references used for the expanded content:
+
+- UEFA: 146 Portugal goals, 234 international appearances,
+  international records.
+
+- FIFA: first player to score at six FIFA World Cups.
+
+- Real Madrid: 451 goals in 438 official appearances,
+  2009–2018.
+
+- Juventus: 134 appearances, 101 goals, five trophies.
+
+- Premier League: 31 goals in 34 league games and
+  42 in all competitions in 2007/08.
+
+- Sporting CP: first-team debut on 14 August 2002
+  vs Inter Milan.
+
+- Reuters: 979 career goals reported 23 September 2026;
+  Al Nassr 2025/26 league title;
+  Portugal national-team status updates in October 2026.
+-->
+
+</body>
+</html>
